@@ -1,0 +1,11 @@
+---
+- name: check info from servers
+  hosts: test_vagrant_app
+  become: yes
+
+  tasks:
+  - shell: free -h
+    register: results
+
+  - debug:
+        var: results.stdout

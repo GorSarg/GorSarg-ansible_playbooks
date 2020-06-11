@@ -1,5 +1,6 @@
 ---
 - name: check info from servers
+  hosts: all
   become: yes
 
   tasks:

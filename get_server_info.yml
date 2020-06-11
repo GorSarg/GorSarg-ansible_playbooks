@@ -1,6 +1,6 @@
 ---
 - name: check info from servers
-  hosts: test_vagrant_app
+  hosts: all_vagrant
   become: yes
 
   tasks:
